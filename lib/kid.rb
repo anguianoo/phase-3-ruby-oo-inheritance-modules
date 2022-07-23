@@ -3,7 +3,8 @@ require_relative './meta_dancing_module'
 
 class Kid
   include Dance
-
+  extend MetaDancing
+  
   attr_accessor :name
 
   def initialize(name)
